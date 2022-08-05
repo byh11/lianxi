@@ -8,12 +8,13 @@ public class Main {
                 @Override
                 public void run() {
                     Lock.LOCK.lock();
-                    System.out.println(finalI);
+                    System.out.println(finalI+"进入");
                     try {
-                        Thread.sleep(finalI*1000);
+                        Thread.sleep(finalI*100);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
+                    System.out.println(finalI+"退出");
                     Lock.LOCK.unlock();
                 }
             }).start();
@@ -23,6 +24,5 @@ public class Main {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        Queue.QUEUE.dis();
     }
 }
