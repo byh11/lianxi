@@ -8,6 +8,9 @@ public class ListNode {
         return val;
     }
 
+    public ListNode() {}
+    public ListNode(int val) { this.val = val; }
+
     public void setVal(int val) {
         this.val = val;
     }
