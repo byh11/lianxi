@@ -1,9 +1,6 @@
 package zuoye.UniformityHash;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class HashRing {
@@ -75,13 +72,13 @@ public class HashRing {
         }
     }
 
-    public int get(int x){
+    public String get(int x){
         int a=x%MAX;
         for (int i = 0; i < list.size()-1; i++) {
             if(list.get(i)<=a && list.get(i+1)>a){
-
+                return (String) arrayLists.get(i).get(a);
             }
         }
-        return 0;
+        return "err";
     }
 }

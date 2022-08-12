@@ -17,16 +17,17 @@ public class Main {
         hashRing.add(list1);
         hashRing.add(list2);
         hashRing.add(100000004,"4");
-        for (Map.Entry entry:list.entrySet()) {
-            System.out.println(entry.getValue());
-        }
-        System.out.println("====================");
-        for (Map.Entry entry:list1.entrySet()) {
-            System.out.println(entry.getValue());
-        }
-        System.out.println("====================");
-        for (Map.Entry entry:list2.entrySet()) {
-            System.out.println(entry.getValue());
-        }
+//        for (Map.Entry entry:list.entrySet()) {
+//            System.out.println(entry.getValue());
+//        }
+//        System.out.println("====================");
+//        for (Map.Entry entry:list1.entrySet()) {
+//            System.out.println(entry.getValue());
+//        }
+//        System.out.println("====================");
+//        for (Map.Entry entry:list2.entrySet()) {
+//            System.out.println(entry.getValue());
+//        }
+        System.out.println(hashRing.get(111));
     }
 }
