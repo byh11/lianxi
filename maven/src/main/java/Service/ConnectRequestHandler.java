@@ -20,7 +20,7 @@ public class ConnectRequestHandler extends SimpleChannelInboundHandler<ConnectRe
         ConnectResponsePacket connectResponsePacket = new ConnectResponsePacket();
         connectResponsePacket.setKay("123");
         connectResponsePacket.setVal("333");
-        connectResponsePacket.setTime(11111);
-        SequentialGroup.getChannelGroup().writeAndFlush(connectResponsePacket);
+        connectResponsePacket.setTime(100);
+        channelHandlerContext.channel().writeAndFlush(connectResponsePacket);
     }
 }

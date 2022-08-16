@@ -10,8 +10,6 @@ public class ConnectResponseHandler extends SimpleChannelInboundHandler<ConnectR
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, ConnectResponsePacket connectResponsePacket) throws Exception {
         System.out.println(11);
-        Method method=Sequential.class.getMethod("add", String.class, String.class, long.class);
-        boolean b= (boolean) method.invoke(connectResponsePacket.getKay(),connectResponsePacket.getVal(),connectResponsePacket.getTime());
-        System.out.println(b);
+        TaskThread.sequential.add(connectResponsePacket.getKay(),connectResponsePacket.getVal(),connectResponsePacket.getTime());
     }
 }

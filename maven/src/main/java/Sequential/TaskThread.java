@@ -4,9 +4,9 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 public class TaskThread extends Thread{
-    private Sequential sequential;
+    public static Sequential sequential;
 
-    private CountDownLatch countDownLatch=new CountDownLatch(1);
+    public static CountDownLatch countDownLatch=new CountDownLatch(1);
 
     public TaskThread(){
         sequential=new Sequential();
@@ -26,6 +26,7 @@ public class TaskThread extends Thread{
             try {
                 //await时间到为false
                 if (!countDownLatch.await(time, TimeUnit.MILLISECONDS)) {
+                    System.out.println(sequential.getNode().getNext().getMap().get("123"));
                     sequential.del();
                 }
                 if(sequential.getNode().getNext()==null){
