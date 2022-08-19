@@ -9,7 +9,6 @@ import java.lang.reflect.Method;
 public class ConnectResponseHandler extends SimpleChannelInboundHandler<ConnectResponsePacket> {
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, ConnectResponsePacket connectResponsePacket) throws Exception {
-        System.out.println(11);
         TaskThread.sequential.add(connectResponsePacket.getKay(),connectResponsePacket.getVal(),connectResponsePacket.getTime());
     }
 }

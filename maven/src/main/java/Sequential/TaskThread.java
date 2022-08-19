@@ -25,6 +25,8 @@ public class TaskThread extends Thread{
         while (true){
             try {
                 //await时间到为false
+                System.out.println(1);
+                sleep(1000);
                 if (!countDownLatch.await(time, TimeUnit.MILLISECONDS)) {
                     System.out.println(sequential.getNode().getNext().getMap().get("123"));
                     sequential.del();
