@@ -1,4 +1,4 @@
-package zuoye.zuoye1;
+package zuoye;
 
 import java.io.*;
 import java.net.ServerSocket;
