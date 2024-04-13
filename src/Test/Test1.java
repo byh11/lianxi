@@ -2,9 +2,9 @@ package Test;
 
 public class Test1 {
     public static void main(String[] args) {
-        System.out.println("A");
-        new Test1();
-        new Test1();
+//        System.out.println("A");
+//        new Test1();
+//        new Test1();
     }
 
 //    public Test1() {
