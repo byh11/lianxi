@@ -12,9 +12,14 @@ public class T2 {
 //        System.out.println("i1==i2:"+(i2==i3));
 //        System.out.println("i1==i3:"+(i1==i3));
 //        System.out.println("i2==i3:"+(i2==i3));
-        Integer a=new Integer(1248);
-        a(a);
-        System.out.println(a);
+//        Integer a=new Integer(1248);
+//        a(a);
+//        System.out.println(a);
+        String s=new String("as");
+        String s1=new String("as");
+        System.out.println("s==s1:"+(s==s1));
+
+
     }
 
 
