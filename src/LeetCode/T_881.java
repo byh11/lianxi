@@ -1,9 +1,10 @@
-//package LeetCode;
-//
-//import java.util.*;
-//
-//public class T_881 {
-//    public static int numRescueBoats(int[] people, int limit) {
+package LeetCode;
+
+
+import java.util.*;
+
+public class T_881 {
+    //    public static int numRescueBoats(int[] people, int limit) {
 //        int n=0,x=0;
 //        List list=new ArrayList<>(Arrays.asList(people));
 //        for (int i = 0; i < people.length; i++) {
@@ -38,6 +39,10 @@
 //    }
 //
 //    public static void main(String[] args) {
-//        System.out.println(numRescueBoats(new int[]{3,8,7,1,4}, 9));
+//        System.out.println(numRescueBoats(new int[]{3, 8, 7, 1, 4}, 9));
 //    }
-//}
+//
+//    public static int numRescueBoats(int[] people, int limit) {
+//
+//    }
+}
