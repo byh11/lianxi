@@ -8,17 +8,19 @@ public class T_66 {
     }
 
     public static int[] plusOne(int[] digits) {
-        String str = "";
-        for (int i = 0; i < digits.length; i++) {
-            str+=digits[i];
+        boolean b = false;
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] == 9) {
+                digits[i] = 0;
+            } else {
+                digits[i] += 1;
+                if (digits[i] == 10)
+                    continue;
+                return digits;
+            }
         }
-        Integer n = Integer.valueOf(str);
-        n++;
-        String s=n.toString();
-        int[] res = new int[s.length()];
-        for (int i = 0; i < s.length(); i++) {
-           res[i]=Integer.valueOf(s.substring(i,i+1));
-        }
-        return res;
+        int[] n = new int[digits.length + 1];
+        n[0] = 1;
+        return n;
     }
 }
