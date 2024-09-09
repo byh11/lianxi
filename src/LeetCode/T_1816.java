@@ -1,15 +1,17 @@
 package LeetCode;
 
+import java.time.LocalDateTime;
+
 /**
- * @Author °×ÔÆºÆ
+ * @Author ï¿½ï¿½ï¿½Æºï¿½
  * @Date 2024/8/28 21:37
- * @×¢ÊÍ
+ * @×¢ï¿½ï¿½
  */
 
 public class T_1816 {
 
     public static void main(String[] args) {
-
+        System.out.println(LocalDateTime.now());
 
     }
 
