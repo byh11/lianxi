@@ -34,7 +34,7 @@ public class WrittenTest {
         }
     }
 
-    //第二题,10min
+    //第二题,8min
     public static HashMap<String, Integer> getMap(String s) {
         HashMap<Character, Integer> map = new HashMap<>();
         int max = 0;
