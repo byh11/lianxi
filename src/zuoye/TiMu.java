@@ -1,25 +1,21 @@
-
+package zuoye;
 
 import java.util.HashMap;
 import java.util.Stack;
 
-public class WrittenTest {
+/***
+ * 姓名：白云浩
+ * 手机号：15164881433
+ * 应聘岗位：后端开发工程师
+ * 是否在京：否
+ * 最早入职时间：面试通过后
+ * 可以实现6个月以上
+ * 毕业后打算工作
+ * 目前在天津
+ */
 
-    public static void main(String[] args) {
-//        System.out.println(Palindrome("abcba"));
-//        System.out.println(getMap("14444112442aa44442244311222222244445444243334444ccc4444"));
 
-        TreeNode root = new TreeNode(1);
-        root.setLeft(new TreeNode(2));
-        root.getLeft().setLeft(new TreeNode(3));
-        root.getLeft().getLeft().setLeft(new TreeNode(6));
-        root.getLeft().setRight(new TreeNode(4));
-        root.getLeft().getRight().setLeft(new TreeNode(10));
-        root.setRight(new TreeNode(9));
-        root.getRight().setLeft(new TreeNode(7));
-        root.getRight().setRight(new TreeNode(8));
-        ergodic(root);
-    }
+public class TiMu {
 
 
     //第一题,2min
@@ -119,6 +115,4 @@ public class WrittenTest {
             this.right = right;
         }
     }
-
-
 }
